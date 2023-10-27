@@ -12,3 +12,7 @@ body {
                 3px 3px 0 #ff0000,
                  0px 0px 0 #ffffff;
 } */
+/* img {
+    @apply rounded-xl; /* or @apply rounded-full for fully rounded images 
+
+  } */
