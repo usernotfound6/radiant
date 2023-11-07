@@ -2,9 +2,9 @@
 <html lang="en" class="scroll-smooth">
     <head>
         <meta charset="UTF-8" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" type="image/svg+xml" href="https://p7.hiclipart.com/preview/483/775/714/computer-icons-pottery-ceramic-vector-vector.jpg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Radiant template - tailus</title>
+        <title>Addis Alem Pottery</title>
         <meta name="description" content="Modern multi purpose agency template" />
 
         <!-- Facebook Meta Tags -->
@@ -29,11 +29,14 @@
     <body class="stroke-text">
     <body class="bg-black">
         <header class="fixed top-0 z-20 w-full">
-            <nav class="2lg:px-12 mx-auto max-w-7xl px-6 py-12 lg:px-12 xl:px-6 2xl:px-0">
+            <nav class="2lg:px-12 mx-auto max-w-7xl px-6 py-12 lg:px-12 xl:px-6 2xl:px-0"
+            x-data="{ atTop: true }"
+            x-bind:class="{ 'hidden': !atTop }"
+            @scroll.window="atTop = (window.pageYOffset > 150 ? false : true)">>
                 <div class="flex items-center justify-between">
                     <a href="/" class="text-2xl font-light tracking-widest text-white">ADDIS ALEM</a>
                     <a href="#contact" class="relative py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10">
-                        <span class="relative">Get in touch!</span>
+                        <span class="relative">Get In Touch!</span>
                     </a>
                 </div>
             </nav>
@@ -57,13 +60,10 @@
                         </div>
                     </div>
                     <div data-rellax-speed="-5" data-rellax-xs-speed="0" data-rellax-mobile-speed="0" class="rellax relative mt-16 ml-auto w-max md:mt-32 md:ml-0 xl:-mt-16">
-                        <span class="text-xs font-light uppercase tracking-widest text-white">Follow us</span>
+                        <span class="text-xs font-light uppercase tracking-widest text-white">Follow Me</span>
                         <ul class="relative z-20 mt-4 space-y-2 text-sm font-light text-white">
                             <li>
                                 <a href="#" target="_blank">001 ------ Instagram</a>
-                            </li>
-                            <li>
-                                <a href="#" target="_blank">002 ------ Behance</a>
                             </li>
                             <li>
                                 <a href="#" target="_blank">003 ------ Twitter</a>
@@ -330,6 +330,7 @@
         </footer>
         <script type="module" src="./main.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     </body>
  </body>
 </html>
